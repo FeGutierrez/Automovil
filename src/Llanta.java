@@ -14,10 +14,10 @@ public class Llanta {
     private String modelo;
     private int tamanoPulgadas;
     
-    public Llanta(String marca, String modelo, int tamanoPulgadas){
-        this.marca=marca;
-        this.modelo=modelo;
-        this.tamanoPulgadas=tamanoPulgadas;
+    public Llanta(){
+        //this.marca=marca;
+        //this.modelo=modelo;
+        //this.tamanoPulgadas=tamanoPulgadas;
     }
 
     public String getMarca() {

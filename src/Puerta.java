@@ -11,8 +11,8 @@
 public class Puerta {
     private String tipo;
     
-    public Puerta(String tipo){
-        this.tipo = tipo;
+    public Puerta(){
+        //this.tipo = tipo;
     };
 
     public String getTipo() {

@@ -12,9 +12,9 @@ public class Motor {
     private String numeroSerie;
     private int cilindros;
     
-    public Motor(String numerioSerie, int cilindros){
-        this.numeroSerie = numerioSerie;
-        this.cilindros = cilindros;        
+    public Motor(){
+        //this.numeroSerie = numerioSerie;
+        //this.cilindros = cilindros;        
     };
 
     public String getNumeroSerie() {

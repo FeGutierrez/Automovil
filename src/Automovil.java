@@ -26,7 +26,7 @@ public class Automovil {
         return motor;
     }
     
-    public void replacerMotor (Motor motor){
+    public void replaceMotor (Motor motor){
         this.motor=motor;
     }
     
@@ -35,7 +35,18 @@ public class Automovil {
     }
     
     public boolean addLlanta(Llanta llantas){
-        //
+        for (int i = 0; i < this.llantas.length; i++) {
+            if(this.llantas[i]==null){
+                this.llantas[i]=llantas;                
+                //Para creacion por composicion se elimina (Llanta llantas ) Ej public boolean addLlanta(){};
+//                this.llantas[i] = new Llanta();
+//                this.llantas[i].setMarca("Marca1");
+//                this.llantas[i].setModelo("Modelo1");
+//                this.llantas[i].setTamanoPulgadas(16);
+                return true;
+                
+            }            
+        }
         return false;
     }
     
@@ -47,6 +58,24 @@ public class Automovil {
         //Buscar y cambiar
         return false;
     }
+    
+    public Puerta[] getPuerta(){
+        return this.puertas;
+    }
+    
+    public boolean addPuerta(Puerta puertas){
+        return false;
+    }
+    
+    public boolean removePuerta(Puerta puerta){
+        return false;
+    }
+    
+    public boolean replacePuerta(Puerta puerta, Puerta nuevaPuerta){
+        return false;
+    }
+    
+    //Add Remove replace 
     
 
     public String getMarca() {
